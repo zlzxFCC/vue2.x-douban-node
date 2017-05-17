@@ -18,10 +18,10 @@ cd node-proxy
 node index.js
 
 //启动成功后，将看到输出
-// HTTP Server is running in http://127.0.0.1:8081
+// HTTP Server is running in http://127.0.0.1:8881
 ```
 
-最后打开浏览器，输入`localhost:8880`即可访问。效果图如下：
+最后打开浏览器，输入`localhost:8888`即可访问。效果图如下：
 
 ![text](../master/static/vue-douban-shrink.gif)
 
@@ -181,11 +181,11 @@ app.all('*', function (req, res, next) {
 ```
 **端口监听**
 ```javascript
-app.listen(8081, function () {
-  console.log('HTTP Server is running in http://127.0.0.1:8081')
+app.listen(8881, function () {
+  console.log('HTTP Server is running in http://127.0.0.1:8881')
 })
 ```
-**启动**
+**服务请分开（分别开启多个Git Bash）启动（先开启npm run dev再开启node index.js）**
 
 ```
 cd node-proxy
